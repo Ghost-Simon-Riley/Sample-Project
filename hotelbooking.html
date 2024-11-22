@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Carousel Styles */
+        .carousel {
+            position: relative;
+            max-width: 600px;
+            margin: 10px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-images img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* Navigation dots */
+        .carousel-dots {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .carousel-dots button {
+            background-color: #bbb;
+            border: none;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+
+        .carousel-dots .active {
+            background-color: #555;
+        }
+
+        /* General Styling */
+        main {
+            margin: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Styling for the 'Book Now' button */
+        .book-now {
+            display: block; /* Make it a block element to ensure it takes up the full width */
+            width: 100%; /* Make it span the full width of the container */
+            padding: 10px 20px;
+            margin: 10px 0;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase; /* Added for a more standardized button style */
+        }
+
+        .book-now:hover {
+            background-color: #0056b3;
+        }
+
+        .hotel-container {
+            margin-bottom: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Ensures spacing between carousel and button */
+            align-items: center; /* Centers everything within the container */
+        }
+
+        /* Adjusting layout to display hotels side by side */
+        .hotel-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hotels</h1>
+        <nav>
+            <ul>
+                <li><a href="travelblog.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="hotelbooking.html">Hotel Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Paris -->
+        <h2>Paris, France</h2>
+        <div class="hotel-row">
+            <!-- Hotel 1 (Paris) -->
+            <div class="hotel-container">
+                <h3>Le Royal Monceau - Raffles Paris </h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Paris hotel 1-1.webp" alt="Hotel Ritz Image 1">
+                        <img src="images for project/Paris hotel 1-2.jpg" alt="Hotel Ritz Image 2">
+                        <img src="images for project/Paris hotel 1-3.jpg" alt="Hotel Ritz Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwi2upn1oOWJAxU6pWYCHTHPHU0YABAGGgJzbQ&ae=2&aspm=1&co=1&ase=2&gclid=CjwKCAiAxea5BhBeEiwAh4t5K70o66bg8MBQZcFITNryd6JxMducGdH6ZQplqVZEnZDqcftz8WahKhoCxRQQAvD_BwE&ohost=www.google.com&cid=CAESVeD270B1mfBC37DgualifpKpASy2bX5Wrnjfh3TxmPeADg-cLqhKBLn-d0ts-1FAxvG7mYbfWvlFPlQdBZniiFSSi-HW3k00otagj9OSG_tgQaTQveI&sig=AOD64_260U84h9xv2az9k9RFaxHkgawbMQ&q&nis=4&adurl&ved=2ahUKEwjjkZP1oOWJAxXl7zgGHcsfA28Q0Qx6BAgHEAE" target="_blank">Book Now</a>
+            </div>
+
+            <!-- Hotel 2 (Paris) -->
+            <div class="hotel-container">
+                <h3>Hotel Lutetia Paris</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Paris hotel 2-1.jpg" alt="Le Bristol Image 1">
+                        <img src="images for project/Paris Hotel 2-2.jpg" alt="Le Bristol Image 2">
+                        <img src="images for project/Paris hotel 2-3.jfif" alt="Le Bristol Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjh6eigouWJAxXnpWYCHUMDORMYABAGGgJzbQ&ae=2&aspm=1&co=1&ase=2&gclid=CjwKCAiAxea5BhBeEiwAh4t5KyuN2VYNQLd0HvQ5GCqiL6t9tOp_70x9W-EbRkIjAsf5hwWEYBm7hRoCtRcQAvD_BwE&ohost=www.google.com&cid=CAESVeD2Dr12s0SgWwOs34ybK2VQt9pJ4qpV29z3JJaunhOFaquc_y1KUDoVG12gwA-yJEblc-k2JtzED8wG8hd4gk2wY_zZbd-Yy1M6JcI43AxTWtjpRxQ&sig=AOD64_3nArGOA9KKWoTnWpTAPKMMzPnb9g&q&nis=4&adurl&ved=2ahUKEwjsheOgouWJAxWXyDgGHQzXFdUQ0Qx6BAgmEAE" target="_blank">Book Now</a>
+            </div>
+        </div>
+
+        <!-- Bali -->
+        <h2>Bali, Indonesia</h2>
+        <div class="hotel-row">
+            <!-- Hotel 1 (Bali) -->
+            <div class="hotel-container">
+                <h3>Raffles Bali </h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Bali Resort 2-1.webp" alt="Four Seasons Image 1">
+                        <img src="images for project/Bali Resort 2-2.jpg" alt="Four Seasons Image 2">
+                        <img src="images for project/Bali Resort 2-3.webp" alt="Four Seasons Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.bookingwebsite.com/fourseasons-bali" target="_blank">Book Now</a>
+            </div>
+
+            <!-- Hotel 2 (Bali) -->
+            <div class="hotel-container">
+                <h3>Soori Bali</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Bali Resort 1-1.webp" alt="Soori Bali Image 1">
+                        <img src="images for project/Bali Resort 1-2.webp" alt="Soori Bali Image 2">
+                        <img src="images for project/Bali Soori.jpg" alt="Soori Bali Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwinwIaMpeWJAxUkpmYCHafjHLkYABAKGgJzbQ&ae=2&aspm=1&co=1&ase=2&gclid=CjwKCAiAxea5BhBeEiwAh4t5K0ovV-O6uFXX-KOkgV2lEIFm8Ac4Zx6ZtDDZeeCHfTEAvQ5SIXI5pRoClmMQAvD_BwE&ohost=www.google.com&cid=CAESVeD2HcDZ4XHmq9txUubRXkuEHREHK1mjZIC1Olz3orR-fk5URzm0LETon0-pXLIw55yV8FQSFCxS-1aUkFNad-UboGkoTVLJQyWJPSRoRF3v5S6Tz1c&sig=AOD64_2m6EhuSbkyb_OAKJInV7CS0lCiCQ&q&nis=4&adurl&ved=2ahUKEwijqoGMpeWJAxVwyzgGHZpBDVsQ0Qx6BAgJEAE" target="_blank">Book Now</a>
+            </div>
+        </div>
+        <!-- New York -->
+        <h2>New York, USA</h2>
+        <div class="hotel-row">
+            <!-- Hotel 1 (New York) -->
+            <div class="hotel-container">
+                <h3>Renaissance Newv York Midtown Hotel </h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/New york hotel 1-1.jfif" alt="RNYKMH Image 1">
+                        <img src="images for project/New York Hotel 1-3jpg.jpg" alt="RNYKMH Image 2">
+                        <img src="images for project/New york hotel 1-2.avif" alt="RNYKMH Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.marriott.com/hotels/travel/nycsg-renaissance-new-york-midtown-hotel" target="_blank">Book Now</a>
+            </div>
+
+            <!-- Hotel 2 (New York) -->
+            <div class="hotel-container">
+                <h3> Park Central Hotel New York</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/New york Hotel 2-1.jpg" alt="PCH new-york-city Image 1">
+                        <img src="images for project/New York hotel 2-2.jpg" alt="PCH new-york-city Image 2">
+                        <img src="images for project/New york hotel 2-3.jpg" alt="PCH new-york-city Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjrqJ6rueWJAxWCg0sFHf2lPZgYABADGgJzZg&co=1&ase=2&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrDHTB1050AwJe0LJ-D2EzpwEDouA-Z2lGf0yLCMpYniPu5anczNj1EaAjCgEALw_wcB&ohost=www.google.com&cid=CAESVeD2k6usn_ZEi8mIs5zprNVMmOg7-3VAp6gkMMjMdrbGFT94-3vNl63_CccxEf4kQWKmfKfO6tcimg6TSHxnTn2Fk3SbI-1_dtx-xfZmQ5LLSagaptg&sig=AOD64_1wakMp4wSLNeFwlwqzVN1ViHQW6g&q&nis=4&adurl&ved=2ahUKEwjAvpWrueWJAxW73zgGHVCyLFIQ0Qx6BAglEAM" target="_blank">Book Now</a>
+            </div>
+        </div>
+            
+        </div>
+         <!-- Rome -->
+         <h2>Rome, Italy</h2>
+         <div class="hotel-row">
+            <!-- Hotel 1 (Rome) -->
+            <div class="hotel-container">
+                <h3>Palazzo Manfredi </h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Rome 20.jpg" alt="Palazzo Manfredi Image 1">
+                        <img src="images for project/Rome 21.jpg" alt="Palazzo Manfredi Image 2">
+                        <img src="images for project/Rome 22.jpg" alt="Palazzo Manfredi Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.manfredihotels.com/en/palazzo-manfredi/" target="_blank">Book Now</a>
+            </div>
+ 
+             <!-- Hotel 2 (Rome) -->
+             <div class="hotel-container">
+                 <h3> Hotel Hassler Roma</h3>
+                 <div class="carousel">
+                     <div class="carousel-images">
+                         <img src="images for project/Rome Hotel 2-1.jpg" alt="Hotel Hassler Roma Image 1">
+                         <img src="images for project/Rome hotel 2-2.webp" alt="Hotel Hassler Roma Image 2">
+                         <img src="images for project/Rome hotel 2-3.jpg" alt="Hotel Hassler Roma Image 3">
+                     </div>
+                     <div class="carousel-dots">
+                         <button class="active"></button>
+                         <button></button>
+                         <button></button>
+                     </div>
+                 </div>
+                 <a class="book-now" href="https://www.hotelhasslerroma.com/en/offers" target="_blank">Book Now</a>
+             </div>
+         </div>
+             
+         </div>
+          <!-- Barcelona -->
+        <h2>Barcelona, Spain</h2>
+        <div class="hotel-row">
+            <!-- Hotel 1 (Barcelona) -->
+            <div class="hotel-container">
+                <h3>Hotel Arts Barcelona</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Barcelona 1-1.webp" alt="Hotel Arts Barcelona Image 1">
+                        <img src="images for project/Barcelona 1-2.webp" alt="Hotel Arts Barcelona Image 2">
+                        <img src="images for project/Barcelona 1-3.webp" alt="Hotel Arts Barcelona Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.hotelartsbarcelona.com/en/" target="_blank">Book Now</a>
+            </div>
+
+            <!-- Hotel 2 (Barcelona) -->
+            <div class="hotel-container">
+                <h3> The Wittmore Barcelona</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Barcelona 2-1.webp" alt="The Wittmore Barcelona Image 1">
+                        <img src="images for project/Barcelona 2-2.webp" alt="The Wittmore Barcelona Image 2">
+                        <img src="images for project/Barcelona 2-3.webp" alt="The Wittmore Barcelona Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.wittmorehotel.com/en/" target="_blank">Book Now</a>
+            </div>
+        </div>
+            
+        </div>
+         <!-- Tokyo -->
+         <h2>Tokyo, Japan</h2>
+         <div class="hotel-row">
+             <!-- Hotel 1 (Tokyo) -->
+             <div class="hotel-container">
+                 <h3>Hoshinoya Tokyo </h3>
+                 <div class="carousel">
+                     <div class="carousel-images">
+                         <img src="images for project/Tokyo 1-1.webp" alt="Hoshinoya Tokyo Image 1">
+                         <img src="images for project/Tokyo 1-2.webp" alt="Hoshinoya Tokyo Image 2">
+                         <img src="images for project/Tokyo 1-3.webp" alt="Hoshinoya Tokyo Image 3">
+                     </div>
+                     <div class="carousel-dots">
+                         <button class="active"></button>
+                         <button></button>
+                         <button></button>
+                     </div>
+                 </div>
+                 <a class="book-now" href="https://hoshinoresorts.com/en/hotels/hoshinoyatokyo/" target="_blank">Book Now</a>
+             </div>
+ 
+             <!-- Hotel 2 (Tokyo) -->
+             <div class="hotel-container">
+                 <h3>Park Hyatt Tokyo </h3>
+                 <div class="carousel">
+                     <div class="carousel-images">
+                         <img src="images for project/Tokyo 2-1.webp" alt="Park Hyatt Tokyo Image 1">
+                         <img src="images for project/tokyo 2-2.webp" alt="Park Hyatt Tokyo Image 2">
+                         <img src="images for project/Tokyo 2-3.webp" alt="Park Hyatt Tokyo Image 3">
+                     </div>
+                     <div class="carousel-dots">
+                         <button class="active"></button>
+                         <button></button>
+                         <button></button>
+                     </div>
+                 </div>
+                 <a class="book-now" href="https://www.tokyo-hotels-now.com/en/property/park-hyatt.html" target="_blank">Book Now</a>
+             </div>
+         </div>
+             
+         </div>
+          <!-- Manali -->
+        <h2>Manali, India</h2>
+        <div class="hotel-row">
+            <!-- Hotel 1 (Manali) -->
+            <div class="hotel-container">
+                <h3>Club Mahindra White Meadows Manali </h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Manali hotel 2-1.jpg" alt="Club Mahindra White Meadows Manali Image 1">
+                        <img src="images for project/Manali Hotel 2-2.jpg" alt="Club Mahindra White Meadows Manali Image 2">
+                        <img src="images for project/Manali hotel 2-3.jpg" alt="Club Mahindra White Meadows Manali Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.booking.com/hotel/in/white-meadows-manali.en-gb.html?label=metagha-link-LUIN-hotel-1111334_dev-desktop_los-1_bw-16_dow-Wednesday_defdate-1_room-0_gstadt-2_rateid-public_aud-0_gacid-21415141192_mcid-10_ppa-1_clrid-0_ad-1_gstkid-0_checkin-20241204_ppt-Ed_lp-2356_r-12012329186148505432&sid=891822b17b6ac33c680f3f57b387d9c5&utm_source=metagha&utm_medium=localuniversal&utm_term=hotel-1111334&utm_content=dev-desktop_los-1_bw-16_dow-Wednesday_defdate-1_room-0_gstadt-2_rateid-public_aud-0_gacid-21415141192_mcid-10_ppa-1_clrid-0_ad-1_gstkid-0_checkin-20241204_ppt-Ed&utm_campaign=IN&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrBGbK8MPYQ-JxdMwcZX6Cn1vy1uK_gkzXtX-n6XW6UVBST9IgPitMEaAm5EEALw_wcB&aid=2419802&ucfs=1&arphpl=1&checkin=2024-12-04&checkout=2024-12-05&dest_id=-2105324&dest_type=city&group_adults=2&req_adults=2&no_rooms=1&group_children=0&req_children=0&hpos=1&hapos=1&sr_order=popularity&srpvid=1ada5d10ba080f63&srepoch=1731935698&all_sr_blocks=111133401_402483341_0_1_0_413295&highlighted_blocks=111133401_402483341_0_1_0_413295&matching_block_id=111133401_402483341_0_1_0_413295&sr_pri_blocks=111133401_402483341_0_1_0_413295_680000&from_sustainable_property_sr=1&from=searchresults" target="_blank">Book Now</a>
+            </div>
+
+            <!-- Hotel 2 (Manali) -->
+            <div class="hotel-container">
+                <h3> Honeymoon inn Manali</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Manali 1-1.jpg" alt="Honeymoon inn Manali Image 1">
+                        <img src="images for project/manali 1-2.jpg" alt="Honeymoon inn Manali Image 2">
+                        <img src="images for project/Manali 1-3.jpg" alt="Honeymoon inn Manali Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.honeymooninnmanali.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+            
+        </div>
+         <!-- Cape Town -->
+         <h2>Cape Town, South Africa</h2>
+         <div class="hotel-row">
+             <!-- Hotel 1 (Cape Town) -->
+             <div class="hotel-container">
+                 <h3>One&Only Cape Town </h3>
+                 <div class="carousel">
+                     <div class="carousel-images">
+                         <img src="images for project/Cape Town Hotel 1-1.jpg" alt="One & Only Capetown Image 1">
+                         <img src="images for project/CAPETWON 13.jpg" alt="One & Only Capetown Image 2">
+                         <img src="images for project/CAPETOWN 14.jpg" alt="One & Only Capetown Image 3">
+                     </div>
+                     <div class="carousel-dots">
+                         <button class="active"></button>
+                         <button></button>
+                         <button></button>
+                     </div>
+                 </div>
+                 <a class="book-now" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjNrrHkx-WJAxXGq2YCHXdXFmQYABABGgJzbQ&co=1&ase=2&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrArdaZRzYWrL5_o5Za2XmI65JJQ7-THRj71LiM4YU7Y8hR43l4Gnn8aAsSJEALw_wcB&ohost=www.google.com&cid=CAESVeD2YxP4g5VITDqivIUrn8uHRyrwU6bdlC3YPE5c9CKwEcKQRzewriv5pqllqlGj7ATMScrvF5q3ZUdbejjxrZFEHuL4H-7hiCQxhPay0wzSklO_b5I&sig=AOD64_2mvUZJPgI06IWdgZOcndc8tRk_Gw&q&nis=4&adurl&ved=2ahUKEwjKlKvkx-WJAxUld2wGHdE6K44Q0Qx6BAgkEAE" target="_blank">Book Now</a>
+             </div>
+ 
+             <!-- Hotel 2 (Cape Town) -->
+             <div class="hotel-container">
+                 <h3>Queen Victoria Hotel & Manor House by NEWMARK </h3>
+                 <div class="carousel">
+                     <div class="carousel-images">
+                         <img src="images for project/Cape Town Hotel 2-1.jpg" alt="Queen Victoria Hotel & Manor House by NEWMARK Image 1">
+                         <img src="images for project/CAPE TOWN 11.jpg" alt="Queen Victoria Hotel & Manor House by NEWMARK Image 2">
+                         <img src="images for project/CAPETOWN 12.jpg" alt="Queen Victoria Hotel & Manor House by NEWMARK Image 3">
+                     </div>
+                     <div class="carousel-dots">
+                         <button class="active"></button>
+                         <button></button>
+                         <button></button>
+                     </div>
+                 </div>
+                 <a class="book-now" href="" target="_blank">Book Now</a>
+             </div>
+         </div>
+             
+         </div>
+          <!-- Machu Picchu -->
+        <h2>Machu Picchu, Peru</h2>
+        <div class="hotel-row">
+            <!-- Hotel 1 (Machu Picchu) -->
+            <div class="hotel-container">
+                <h3>Sanctuary Lodge, A Belmond Hotel </h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Machu Picchu Hotel 1-1.jpg" alt="Sanctuary Lodge Image 1">
+                        <img src="images for project/Machu Picchu Hotel 1-2.jpg" alt="Sanctuary Lodge Image 2">
+                        <img src="images for project/Machu Picchu Hotel 1-3.jpg" alt="Sanctuary Lodge Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.belmond.com/hotels/south-america/peru/machu-picchu/belmond-sanctuary-lodge/?srsltid=AfmBOooh1-y39kOLJKZWMxVVup1shhxu3tsYA5a53WWPXNnuPLVcHXnb" target="_blank">Book Now</a>
+            </div>
+
+            <!-- Hotel 2 (Machu Picchu) -->
+            <div class="hotel-container">
+                <h3> Casa Del Sol Machu Picchu</h3>
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img src="images for project/Machu Picchu Hotel 2-3.jpg" alt="Casa Del Sol Machu Picchu Image 1">
+                        <img src="images for project/Machu Picchu Hotel 2-1.jpg" alt="Casa Del Sol Machu Picchu Image 2">
+                        <img src="images for project/Machu Picchu Hotel 2-2.jpg" alt="Casa Del Sol Machu Picchu Image 3">
+                    </div>
+                    <div class="carousel-dots">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+                <a class="book-now" href="https://www.casadelsolhotels.com/" target="_blank">Book Now</a>
+            </div>
+        </div>
+            
+        </div>
+         <!-- Santorini -->
+         <h2>Santorini, Greece</h2>
+         <div class="hotel-row">
+             <!-- Hotel 1 (Santorini) -->
+             <div class="hotel-container">
+                 <h3>Chic Hotel Santorini </h3>
+                 <div class="carousel">
+                     <div class="carousel-images">
+                         <img src="images for project/Santorini Hotel 1-1.jpg" alt="Chich Hotel Santorini Image 1">
+                         <img src="images for project/Santorini Hotel 1-2.jpg" alt="Chico Hotel Santorini Image 2">
+                         <img src="images for project/Santorini Hotel 1-3jpg.jpg" alt="Chic Hotel Santorini Image 3">
+                     </div>
+                     <div class="carousel-dots">
+                         <button class="active"></button>
+                         <button></button>
+                         <button></button>
+                     </div>
+                 </div>
+                 <a class="book-now" href="https://santorinichichotel.com/" target="_blank">Book Now</a>
+             </div>
+ 
+             <!-- Hotel 2 (Santorini) -->
+             <div class="hotel-container">
+                 <h3> Athina Luxury Suites</h3>
+                 <div class="carousel">
+                     <div class="carousel-images">
+                         <img src="images for project/Santorini Hotel 2-1webp.webp" alt="Athina Luxury Suites Image 1">
+                         <img src="images for project/Santorini Hotel 2-2.webp" alt="Athina Luxury Suites Image 2">
+                         <img src="images for project/Santorini Hotel 2-3.avif" alt="Athina Luxury Suites Image 3">
+                     </div>
+                     <div class="carousel-dots">
+                         <button class="active"></button>
+                         <button></button>
+                         <button></button>
+                     </div>
+                 </div>
+                 <a class="book-now" href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=3104829205190012&_uCurrency=INR&city=CTSANTOR&cmp=SEM%7CD%7CIH%7CG%7CHname%7CIH_Hname_TROAS_CAT_D_Others%7C3104829205190012%7CRSA%7CRegular&country=GRE&gad_source=1&gclid=Cj0KCQiA6Ou5BhCrARIsAPoTxrAPDmxEZV495oVsZ5KLIr7NECSNhEF0763dJT9JJ2nMWw6e9twVu6waAoC5EALw_wcB&lat=36.41667&lng=25.43103&locusId=CTSANTOR&locusType=city&rank=1&reference=hotel&roomStayQualifier=2e0e&searchText=Santorini&topHtlId=3104829205190012&type=city&mtkeys=defaultMtkey&isPropSearch=T" target="_blank">Book Now</a>
+             </div>
+         </div>
+             
+         </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Blog. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const carousels = document.querySelectorAll('.carousel');
+
+        carousels.forEach((carousel) => {
+            const images = carousel.querySelector('.carousel-images');
+            const dots = carousel.querySelectorAll('.carousel-dots button');
+            let currentIndex = 0;
+            const totalImages = dots.length;
+
+            function updateCarousel(index) {
+                images.style.transform = `translateX(-${index * 100}%)`;
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[index].classList.add('active');
+            }
+
+            // Auto-slide every 5 seconds
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % totalImages;
+                updateCarousel(currentIndex);
+            }, 5000);
+
+            // Dots navigation
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel(index);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
